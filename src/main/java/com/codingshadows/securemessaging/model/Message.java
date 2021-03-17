@@ -13,6 +13,7 @@ import java.util.List;
 @NoArgsConstructor
 public class Message {
     private String messageText;
+    private String senderID;
     private boolean seen;
     private List<User> seenList;
 

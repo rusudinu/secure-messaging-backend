@@ -11,6 +11,7 @@ public class MessageController {
     @MessageMapping("/hello/{id}")
     @SendTo("/topic/greetings/{id}")
     public Message greeting(Message message) {
+        System.out.println("got message");
         return message;
     }
 
