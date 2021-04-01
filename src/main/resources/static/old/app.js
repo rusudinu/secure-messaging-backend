@@ -12,7 +12,7 @@ function setConnected(connected) {
 }
 
 function connect() {
-    var socket = new SockJS('/gs-guide-websocket');
+    var socket = new SockJS('/secure-messaging-websocket-endpoint');
     stompClient = Stomp.over(socket);
     stompClient.connect({}, function (frame) {
         setConnected(true);
@@ -20,7 +20,7 @@ function connect() {
         const urlParams = new URLSearchParams(window.location.search);
         const myParam = urlParams.get('sessionID');
         console.log('Connected: ' + myParam);
-        let domain = "/topic/greetings/" + myParam;
+        let domain = "/topic/messages/" + myParam;
         stompClient.subscribe(domain, function (greeting) {
             showGreeting(JSON.parse(greeting.body).messageText);
         });
@@ -39,7 +39,7 @@ function sendName() {
     const urlParams = new URLSearchParams(window.location.search);
     const myParam = urlParams.get('sessionID');
     console.log('sending: ' + myParam);
-    let domain = "/app/hello/" + myParam;
+    let domain = "/app/message/" + myParam;
     stompClient.send(domain, {}, JSON.stringify({'messageText': $("#name").val()}));
 }
 

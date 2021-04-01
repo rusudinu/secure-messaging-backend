@@ -8,8 +8,8 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class MessageController {
 
-    @MessageMapping("/hello/{id}")
-    @SendTo("/topic/greetings/{id}")
+    @MessageMapping("/message/{id}")
+    @SendTo("/topic/messages/{id}")
     public Message sendMessage(Message message) {
         return message;
     }
