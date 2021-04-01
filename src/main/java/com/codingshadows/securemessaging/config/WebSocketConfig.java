@@ -21,4 +21,21 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
         registry.addEndpoint("/gs-guide-websocket").setAllowedOriginPatterns("*").withSockJS().setClientLibraryUrl("/webjars/sockjs-client/1.0.2/sockjs.min.js");
     }
 
+//    @EventListener
+//    public void onDisconnectEvent(SessionUnsubscribeEvent event) {
+//        //LOGGER.debug("Client with username {} disconnected", event.getUser());
+//        SimpMessageHeaderAccessor headers = SimpMessageHeaderAccessor.wrap(event.getMessage());
+//        System.out.println(headers.getDestination());
+//    }
+//
+//    @EventListener
+//    public void onUnsubscribedEvent(SessionUnsubscribeEvent event) {
+//        SimpMessageHeaderAccessor headers = SimpMessageHeaderAccessor.wrap(event.getMessage());
+//        System.out.println(headers.getDestination());
+//    }
+//    @EventListener
+//    public void onConnectedEvent(SessionConnectedEvent event) {
+//        //listener for client connects
+//        System.out.println(event.toString());
+//    }
 }

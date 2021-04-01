@@ -10,8 +10,7 @@ public class MessageController {
 
     @MessageMapping("/hello/{id}")
     @SendTo("/topic/greetings/{id}")
-    public Message greeting(Message message) {
-        System.out.println("got message");
+    public Message sendMessage(Message message) {
         return message;
     }
 
