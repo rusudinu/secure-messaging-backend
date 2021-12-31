@@ -7,7 +7,7 @@ This allows for chatting anonymously due to the fact that messages are encrypted
 ## Self-hosting
 You can and should self-host the backend on your own server to guarantee that the messages are not leaked. This is not a requirement, but it is recommended. Then, you connect the front-end to this back-end by updating the server url in the app configuration (front-end).
 
-The repo for the front-end can be found [here](https://github.com/rusudinu/secure-messaging-frontend).
+The repo for the front-end can be found [here](https://github.com/xrusu/secure-messaging-frontend).
 
 
 ## How to build
