@@ -15,9 +15,5 @@ Build this project as any other Gradle project. Clone it in your local machine a
 
 
 ## Others
-For other projects / cool stuff, follow me on:
-
-- [GitHub](https://github.com/rusudinu)
-- [Instagram](https://www.instagram.com/dinuustefan/)
-- [Facebook](https://www.facebook.com/rusudinustefan/)
-- [CodingShadows](https://www.codingshadows.com)
+For other projects / cool stuff, follow me on
+[GitHub](https://github.com/xrusu)
